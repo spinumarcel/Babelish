@@ -16,7 +16,7 @@ module Babelish
     end
 
     def get_row_format(row_key, row_value, comment = nil, indentation = 0)
-      entry = comment.to_s.empty? ? "" : "\n/* #{comment} */\n" 
+      entry = comment.to_s.empty? ? "" : "\n/* #{comment} 123 */\n" 
       entry + "\"#{row_key}\"" + " " * indentation + " = \"#{row_value}\";\n"
     end
 
